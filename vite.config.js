@@ -3,15 +3,12 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-   base: '/',
+  base: '/', // Ensure this is set correctly
   plugins: [react()],
   build: {
-    outDir: 'dist',
-    rollupOptions: {
-      input: '/src/main.jsx', // Ensure Vite knows where to start
-    },
+    outDir: 'dist', // This ensures Vite builds the app into the dist folder
   },
-  server:{
-    host: true,
+  server: {
+    host: true, // This makes the server accessible externally
   },
 })
