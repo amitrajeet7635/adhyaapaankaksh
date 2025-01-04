@@ -1,14 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/', // Ensure this is set correctly
+  base: '/', // Add this to ensure correct base path handling for routing
   plugins: [react()],
   build: {
-    outDir: 'dist', // This ensures Vite builds the app into the dist folder
+    outDir: 'dist',
+    rollupOptions: {
+      input: '/src/main.jsx', // Ensure Vite knows where to start
+    },
   },
   server: {
-    host: true, // This makes the server accessible externally
+    host: true,
   },
-})
+});
