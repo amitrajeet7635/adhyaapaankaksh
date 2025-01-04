@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: #fffff7;
+}
+
+#home{
+    background-color: #fffff7;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero-content {
+    display: flex;
+}
+
+.features-img img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.features-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media screen and (max-width: 896px) {
+    .feature-sec {
+        height: 60vh;
+    }
+
+    .feature-sec p {
+        font-size: 28px;
+    }
+
+
+    .features-img {
+        scale: 1;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+    .feature-sec .book-img {
+        left: -3rem;
+        top: 15px;
+        scale: 1;
+    }
+
+    .feature-sec p {
+        font-size: 26px;
+    }
+
+    .features-img {
+        scale: 1;
+    }
+
+    #about p{
+        font-size: 60px;
+    }
+
+    #about img{
+        width: 300px;
+    }
+
+    #about .about-content{
+        margin-top: 1rem;
+        font-size: 12px;    
+        text-align: justify;
+    }
+
+    .one-achi{
+        margin-top: 2rem;
+        scale: 1;
+    }
+
+    .four-achi{
+        margin-top: 3.5rem;
+        scale: 1;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .feature-sec .book-img {
+        top: 15px;
+        left: -3.5rem;
+        scale: 0.8;
+    }
+
+    .feature-sec p {
+        font-size: 24px;
+    }
+
+    .features-img {
+        margin-top: 0.5rem;
+        scale: 1;
+    }
+
+    .four-achi{
+        margin-top: 3.5rem;
+        scale: 1;
+    }
+
+    .one-achi{
+        margin-top: 2rem;
+        scale: 1.1;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .feature-sec {
+        margin-top: 10rem;
+        gap: 0px;
+
+    }
+
+    .feature-sec p {
+        font-size: 22px;
+    }
+
+    .feature-sec .book-img {
+        left: -1rem;
+        top: 1rem;
+        scale: 0.7;
+    }
+
+    .features-img {
+        margin-top: 0.5rem;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        scale: 0.9;
+    }
+
+    #about p{
+        font-size: 50px;
+    }
+
+    #about img{
+        width: 200px;
+    }
+
+    #about .about-content{
+        font-size: 10px;
+    }
+
+    
+
+    #achievers .four-achi{
+        margin-top: 1rem;
+        scale: 0.85;
+    }
+
+    .achi-head{
+        font-size: 30px;
+    }
+
+    .one-achi{
+        scale: 0.9;
+    }
+
+    
+
+    
+
+    .course-card{
+        width: 225px;
+        height: 225px;
+    }
+
+    
+
+    .course-card:nth-child(3) p{
+        bottom: 55%;
+    }
+
+    .course-card:nth-child(3) button{
+        bottom: 45%;
+    }
+
+    .course-card button{
+        font-size: 12px;
+        width: 150px;
+    }
+
+    .review-title{
+        font-size: 35px;
+
+    }
+
+    .review-card{
+        height: 350px;
+        
+    }
+    
+    
+
+
+}
