@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: '/src/main.jsx', // Ensure Vite knows where to start
+      input: '/src/main.jsx', 
     },
   },
   server: {
