@@ -86,7 +86,7 @@ function Home() {
 
             <section id='about' ref={aboutRef} className='min-h-[100vh] w-[100%] pt-[2.5rem] overflow-hidden'>
                 <div className='flex flex-col items-center m-8'>
-                    <p className='about-title text-[60px] font-montserrat font-bold sm:text-[70px] 2xl:text-[100px] 3xl:text-[120px]'>About Us</p>
+                    <p className='about-title text-[60px] font-montserrat font-bold sm:text-[70px] 2xl:text-[100px] 3xl:text-[100px]'>About Us</p>
                     <div className='flex flex-col items-center lg:grid lg:grid-cols-2 gap-0'>
                         <img
                             className={`place-self-center w-[100%] sm:w-[300px] lg:w-[500px] 3xl:w-[600px] rounded-[3rem] transform transition-all duration-700 ease-out lg:${isVisible ? "translate-x-0 opacity-100" : "-translate-x-20 opacity-0"}`}
