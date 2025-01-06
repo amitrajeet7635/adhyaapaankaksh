@@ -132,20 +132,25 @@ function Home() {
                             {/* Default Text and Button */}
                             <div className="absolute inset-0 flex flex-col justify-center items-center transition-opacity duration-300 group-hover:opacity-0 gap-[1rem] mt-[2rem]">
                                 <p className="text-center text-white font-montserrat font-bold text-[30px] 3xl:text-[70px] ">Maths</p>
-                                <button className="mt-2 text-black font-poppins font-semibold flex justify-center items-center p-2 bg-[#58CDE4] rounded-[10px] 3xl:text-[20px]">
+                                <button className="mt-2 text-black font-poppins font-semibold flex justify-center items-center p-2 bg-[#58CDE4] rounded-[10px] 3xl:text-[20px]" >
                                     Know More
                                     <img className="chevron ml-1" src="/chevron_right.svg" alt="right-arrow" />
                                 </button>
                             </div>
 
                             {/* New Text on Hover */}
-                            <div className="h-card absolute inset-0 flex flex-col gap-[2rem] justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <div className="h-card absolute inset-0 flex flex-col gap-[1.5rem] justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 
                                 <p className=" text-white font-montserrat font-bold text-center text-[13px]   3xl:text-[25px]">Crack the Maths Code</p>
 
                                 <p className=" text-white font-montserrat font-bold text-center text-[23px] 3xl:text-[40px]">Classes 8th - 12th</p>
 
                                 <p className=" text-white font-montserrat font-bold text-center text-[12px] 3xl:text-[25px]">Master every formula, solve every problem!</p>
+
+                                <button className="mt-2 text-black font-poppins font-semibold flex justify-center items-center p-2 bg-[#58CDE4] rounded-[10px] 3xl:text-[20px]" onClick={() => window.location.href = '/contact'}>
+                                    Know More
+                                    <img className="chevron ml-1" src="/chevron_right.svg" alt="right-arrow" />
+                                </button>
                             </div>
                         </div>
 
@@ -171,6 +176,10 @@ function Home() {
                                 <p className=" text-white font-montserrat font-bold text-center text-[23px] 3xl:text-[40px]">Classes 8th - 12th</p>
 
                                 <p className=" text-white font-montserrat font-bold text-center text-[12px] 3xl:text-[25px]">Simplify concepts, amplify results!</p>
+                                <button className="mt-2 text-black font-poppins font-semibold flex justify-center items-center p-2 bg-[#58CDE4] rounded-[10px] 3xl:text-[20px]" onClick={() => window.location.href = '/contact'}>
+                                    Know More
+                                    <img className="chevron ml-1" src="/chevron_right.svg" alt="right-arrow" />
+                                </button>
                             </div>
                         </div>
 
@@ -196,6 +205,10 @@ function Home() {
                                 <p className=" text-white font-montserrat font-bold text-center text-[23px] 3xl:text-[40px]">BSc, BCA, BTech</p>
 
                                 <p className=" text-white font-montserrat font-bold text-center text-[12px] 3xl:text-[25px]">Take the leap to higher learning!</p>
+                                <button className="mt-2 text-black font-poppins font-semibold flex justify-center items-center p-2 bg-[#58CDE4] rounded-[10px] 3xl:text-[20px]" onClick={() => window.location.href = '/contact'}>
+                                    Know More
+                                    <img className="chevron ml-1" src="/chevron_right.svg" alt="right-arrow" />
+                                </button>
                             </div>
                         </div>
                     </div>
