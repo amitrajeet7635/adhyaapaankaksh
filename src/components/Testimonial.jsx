@@ -157,7 +157,7 @@ const CardCarousel = () => {
                                         }}
                                     >
                                         <div className="p-4 md:p-6 h-full flex flex-col rounded-xl gap-[2rem]  md:gap-[12rem] lg:gap-[3rem] 2xl:h-[700px] 2xl:gap-[8rem] 3xl:gap-[10rem]">
-                                            <p className="text-[12px] h-[150px] sm:h-[400px] md:h-[200px] lg:h-[250px] 2xl:h-[170px] 3xl:h-[150px] md:text-2xl text-wrap text-gray-800 italic  text-center mb-4 mt-[3rem] sm:text-[20px] sm:mt-[5rem] sm:p-10 md:mt-[7rem] md:text-[20px] lg:leading-3 lg:text-[12px] lg:mt-10 xl:text-[20px] xl:leading-none xl:pt-4 xl:p-0 2xl:p-6 2xl:pt-[4rem]  3xl:text-[20px]">
+                                            <p className="test-review text-[12px] h-[150px] sm:h-[400px] md:h-[200px] lg:h-[250px] 2xl:h-[170px] 3xl:h-[150px] md:text-2xl text-wrap text-gray-800 italic  text-center mb-4 mt-[3rem] sm:text-[20px] sm:mt-[5rem] sm:p-10 md:mt-[7rem] md:text-[20px] lg:leading-3 lg:text-[12px] lg:mt-10 xl:text-[20px] xl:leading-none xl:pt-4 xl:p-0 2xl:p-6 2xl:pt-[4rem]  3xl:text-[20px]">
                                                 {card.review}
                                             </p>
                                             <div className="flex flex-col items-center justify-center gap-2 mb-4 ">

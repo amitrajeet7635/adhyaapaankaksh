@@ -62,6 +62,12 @@ html {
 
 }
 
+@media screen and (min-width: 450px) {
+    .test-review{
+        padding: 0 2rem;
+    }
+}
+
 @media screen and (max-width: 424px) {
     .feature-sec .book-img {
         left: -3rem;
@@ -100,6 +106,10 @@ html {
         margin-top: 3.5rem;
         scale: 1;
     }
+
+    #achievers{
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -129,6 +139,42 @@ html {
     }
 
 
+
+
+}
+
+@media screen and (max-width: 350px) {
+    .hero-section{
+        height: 110vh;
+        
+    }
+
+    .feature-sec .book-img {
+        top: 15px;
+        left: -2rem;
+        scale: 0.8;
+    }
+
+    .achi-head{
+        font-size: 30px;
+    }
+
+    #about .about-title{
+        font-size: 50px;
+    }
+
+    #achievers {
+        height: 90vh;
+    }
+
+    .one-achi{
+        scale: 0.9;
+    }
+
+    .four-achi{
+        margin: 1rem;
+        scale: 0.9;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -220,4 +266,10 @@ html {
     
 
 
+}
+
+@media screen and (min-width: 280px) {
+    #about .about-title{
+        font-size: 40px;
+    }
 }

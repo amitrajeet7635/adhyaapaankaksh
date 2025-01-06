@@ -43,11 +43,11 @@ function Home() {
             <section id='home' className='pt-[2.5rem]' >
                 <img className='absolute top-[-500px] sm:top-[20%] left-[5%] z-[1] lg:left-[3%] ' src="/Pen.png" alt="pen" />
                 <img className='absolute top-[-500px] sm:top-[59%] right-[3%] z-[1] lg:top-[17%] lg:left-[43%]' src="/graph.png" alt="graph-img" />
-                <img className='absolute top-[-500px] sm:top-[39%] left-[41%] z-[1] lg:left-[43%] lg:top-[46%] lg:h-[40px] xl:h-[60px] xl:top-[50%] 2xl:top-[48%] 2xl:left-[40%] 3xl:top-[50%] 3xl:h-[63px] 3xl:left-[42%]' src="/flask.png" alt="flask" />
-                <img className='absolute top-[-500px] sm:top-[70%] z-[1] lg:h-[150px] lg:top-[75%] xl:top-[83%] 2xl:top-[75%] 3xl:top-[75%] 3xl:h-[200px]' src="/Globe.png" alt="globe-img" />
+                <img className='absolute top-[-500px] z-[1]  lg:left-[43%] lg:top-[46%] lg:h-[40px] xl:h-[60px] xl:top-[50%] 2xl:top-[48%] 2xl:left-[40%] 3xl:top-[50%] 3xl:h-[63px] 3xl:left-[42%]' src="/flask.png" alt="flask" />
+                <img className='absolute top-[-500px] z-[1] sm:top-[70%]  lg:h-[150px] lg:top-[75%] xl:top-[83%] 2xl:top-[75%] 3xl:top-[75%] 3xl:h-[200px]' src="/Globe.png" alt="globe-img" />
 
 
-                <div className="hero-section mt-[10rem] flex flex-col gap-[2rem] min-h-[100vh] lg:mt-[5rem] lg:grid lg:grid-cols-[1.3fr_1fr] grid-flow-col m-[30px] content-center lg:min-h-[80vh] xl:h-[100vh]">
+                <div className="hero-section mt-[10rem] flex flex-col gap-[2rem] min-h-[100vh] sm:min-h-[110vh] lg:mt-[5rem] lg:grid lg:grid-cols-[1.3fr_1fr] grid-flow-col m-[30px] content-center lg:min-h-[80vh] xl:h-[100vh]">
 
                     {/* hero image */}
                     <div className=" h-auto ml-[auto] mr-[auto] mt-[2rem] lg:col-start-2 lg:h-[60vh] lg:mt-0 w-">
@@ -61,8 +61,8 @@ function Home() {
 
                             <p className="text-[15px] ml-[10px] mr-[10px] text-center font-medium font-poppins relative sm:text-[15px] w-[80%] lg:text-left lg:ml-0 lg:mr-0 lg:text-[18px] lg:w-[50vw] xl:text-[22px] 3xl:text-[26px] z-10 ">We believe a strong foundation is key to lasting success. Our dedicated teacher provides personalized guidance, helping students build essential skills and knowledge. With focused support and encouragement, students gain the confidence to tackle challenges and are well-prepared to achieve their academic and personal goals.</p>
 
-                            <HashLink smooth to="/#courses" className={`bg-[#EC1F26] font-montserrat font-bold text-[15px] text-white px-4 py-2 rounded-[20px] w-[230px] h-[50px] sm:w-[300px] sm:h-[60px] sm:text-[18px] lg:h-[64px] lg:text-[22px] content-center  3xl:w-[400px] 3xl:h-[80px] 3xl:text-[27px] z-[10] ${ isActive('/#courses')}`}>
-                            Discover Our Courses </HashLink>
+                            <HashLink smooth to="/#courses" className={`bg-[#EC1F26] flex justify-center items-center font-montserrat font-bold text-[15px] text-white px-4 py-2 rounded-[20px] w-[230px] h-[50px] sm:w-[300px] sm:h-[60px] sm:text-[18px] lg:h-[64px] lg:text-[22px] content-center  3xl:w-[400px] 3xl:h-[80px] 3xl:text-[27px] z-[10] ${ isActive('/#courses')}`}>
+                            Discover Our Courses  <ChevronRight /></HashLink>
                         </div>
                     </div>
 
@@ -86,10 +86,10 @@ function Home() {
 
             <section id='about' ref={aboutRef} className='min-h-[100vh] w-[100%] pt-[2.5rem] overflow-hidden'>
                 <div className='flex flex-col items-center m-8'>
-                    <p className='text-[60px] font-montserrat font-bold sm:text-[70px] 2xl:text-[100px] 3xl:text-[120px]'>About Us</p>
+                    <p className='about-title text-[60px] font-montserrat font-bold sm:text-[70px] 2xl:text-[100px] 3xl:text-[120px]'>About Us</p>
                     <div className='flex flex-col items-center lg:grid lg:grid-cols-2 gap-0'>
                         <img
-                            className={`place-self-center w-[100%] sm:w-[300px] lg:w-[600px] 3xl:w-[600px] rounded-[3rem] transform transition-all duration-700 ease-out lg:${isVisible ? "translate-x-0 opacity-100" : "-translate-x-20 opacity-0"}`}
+                            className={`place-self-center w-[100%] sm:w-[300px] lg:w-[500px] 3xl:w-[600px] rounded-[3rem] transform transition-all duration-700 ease-out lg:${isVisible ? "translate-x-0 opacity-100" : "-translate-x-20 opacity-0"}`}
                             src="/nikita mam.svg"
                             alt="mam"
                         />
@@ -100,7 +100,7 @@ function Home() {
                 </div>
             </section>
 
-            <section id='achievers' className='min-h-[90vh] sm:min-h-[150vh] lg:mt-[5rem] xl:min-h-[200vh] 2xl:min-h-[100vh] 3xl:min-h-[150vh]'>
+            <section id='achievers' className='min-h-[90vh] sm:min-h-[130vh] md:min-h-[170vh] lg:min-h-[160vh] lg:mt-[5rem] xl:min-h-[210vh] 2xl:min-h-[150vh] 3xl:min-h-[180vh]'>
                 <div className='flex flex-col items-center sm:gap-[5rem] min-h-[80vh]'>
                     <p className='achi-head text-[35px] font-montserrat font-bold sm:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px] 3xl:text-[100px]'>Our Star Achievers</p>
 
@@ -198,13 +198,12 @@ function Home() {
                                 <p className=" text-white font-montserrat font-bold text-center text-[12px] 3xl:text-[25px]">Take the leap to higher learning!</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
 
 
-            <section id="testimonials" className='flex flex-col  h-[70vh] sm:h-[110vh] md:h-[110vh] lg:h-[80vh] xl:h-[90vh] 2xl:h-[80vh]'>
+            <section id="testimonials" className='flex flex-col  h-[70vh] sm:h-[110vh] md:h-[120vh] lg:h-[100vh] xl:h-[90vh] 2xl:h-[100vh]'>
                 <p className='review-title text-center mt-[1rem] mb-4 text-[40px]  font-bold font-montserrat md:text-[50px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] 3xl:text-[90px]'>Testimonials</p>
                 <CardCarousel />
             </section> 
