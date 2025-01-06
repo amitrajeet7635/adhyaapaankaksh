@@ -113,6 +113,10 @@ html {
 }
 
 @media screen and (max-width: 375px) {
+    .hero-section{
+        height: 110vh;
+        
+    }
     .feature-sec .book-img {
         top: 15px;
         left: -3.5rem;
@@ -145,7 +149,7 @@ html {
 
 @media screen and (max-width: 350px) {
     .hero-section{
-        height: 110vh;
+        height: 120vh;
         
     }
 
