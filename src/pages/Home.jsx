@@ -61,7 +61,7 @@ function Home() {
 
                             <p className="text-[15px] ml-[10px] mr-[10px] text-center font-medium font-poppins relative sm:text-[15px] w-[80%] lg:text-left lg:ml-0 lg:mr-0 lg:text-[18px] lg:w-[50vw] xl:text-[22px] 3xl:text-[26px] z-10 ">We believe a strong foundation is key to lasting success. Our dedicated teacher provides personalized guidance, helping students build essential skills and knowledge. With focused support and encouragement, students gain the confidence to tackle challenges and are well-prepared to achieve their academic and personal goals.</p>
 
-                            <HashLink smooth to="/#courses" className={`bg-[#EC1F26] flex justify-center items-center font-montserrat font-bold text-[15px] text-white px-4 py-2 rounded-[20px] w-[230px] h-[50px] sm:w-[300px] sm:h-[60px] sm:text-[18px] lg:h-[64px] lg:text-[22px] xl:text-[20px] content-center  3xl:w-[400px] 3xl:h-[80px] 3xl:text-[27px] z-[10] ${ isActive('/#courses')}`}>
+                            <HashLink smooth to="/#courses" className={`bg-[#EC1F26] flex justify-center items-center font-montserrat font-bold text-[15px] text-white px-4 py-2 rounded-[20px] w-[230px] h-[50px] sm:w-[300px] sm:h-[60px] sm:text-[18px] lg:h-[64px] lg:text-[20px] xl:text-[20px] content-center  3xl:w-[400px] 3xl:h-[80px] 3xl:text-[27px] z-[10] ${ isActive('/#courses')}`}>
                             Discover Our Courses  <ChevronRight /></HashLink>
                         </div>
                     </div>
@@ -89,7 +89,7 @@ function Home() {
                     <p className='about-title text-[60px] font-montserrat font-bold sm:text-[70px] 2xl:text-[100px] 3xl:text-[100px]'>About Us</p>
                     <div className='flex flex-col items-center lg:grid lg:grid-cols-2 gap-0'>
                         <img
-                            className={`place-self-center w-[100%] sm:w-[300px] lg:w-[500px] 3xl:w-[600px] rounded-[3rem] transform transition-all duration-700 ease-out lg:${isVisible ? "translate-x-0 opacity-100" : "-translate-x-20 opacity-0"}`}
+                            className={`place-self-center w-[100%] sm:w-[300px] lg:w-[450px] 3xl:w-[600px] rounded-[3rem] transform transition-all duration-700 ease-out lg:${isVisible ? "translate-x-0 opacity-100" : "-translate-x-20 opacity-0"}`}
                             src="/nikita mam.svg"
                             alt="mam"
                         />
@@ -104,10 +104,10 @@ function Home() {
                 <div className='flex flex-col items-center sm:gap-[5rem] min-h-[80vh]'>
                     <p className='achi-head text-[35px] font-montserrat font-bold sm:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px] 3xl:text-[100px]'>Our Star Achievers</p>
 
-                    <div className='one-achi mt-[1rem] scale-[115%] sm:scale-[150%] md:scale-[200%] xl:scale-[220%] xl:mt-[1rem] 2xl:scale-[250%] xl:hidden'><img src="/achiever1.svg" alt="achiever1" /></div>
-                    <div className='four-achi grid place-items-center grid-cols-2 gap-1 mt-[4rem] scale-[115%] sm:scale-[150%] sm:gap-x-4 sm:mt-[5rem] md:scale-[200%] md:mt-[13rem]  xl:scale-[200%] xl:mt-[10%] 2xl:mt-[15%] 2xl:grid-cols-3 2xl:gap-4 2xl:scale-[230%] 3xl:scale-[300%] 3xl:mt-[20%]'>
+                    <div className='one-achi mt-[1rem] scale-[115%] sm:scale-[150%] md:scale-[200%] xl:scale-[220%] xl:mt-[1rem] 2xl:scale-[250%] lg:hidden'><img src="/achiever1.svg" alt="achiever1" /></div>
+                    <div className='four-achi grid place-items-center grid-cols-2 gap-1 mt-[4rem] scale-[115%] sm:scale-[150%] sm:gap-x-4 sm:mt-[5rem] md:scale-[200%] md:mt-[13rem] lg:scale-[170%] lg:mt-[5rem]  xl:scale-[200%] xl:mt-[10%] 2xl:mt-[15%] 2xl:grid-cols-3 2xl:gap-4 2xl:scale-[230%] 3xl:scale-[300%] 3xl:mt-[20%]'>
 
-                        <img className='hidden xl:block' src="/achiever1.svg" alt="achiever1" />
+                        <img className='hidden lg:block' src="/achiever1.svg" alt="achiever1" />
                         <img src="/achiever2.svg" alt="achiever2" />
                         <img src="/achiever3.svg" alt="achiever3" />
 
@@ -216,7 +216,7 @@ function Home() {
             </section>
 
 
-            <section id="testimonials" className='flex flex-col  h-[70vh] sm:h-[110vh] md:h-[120vh] lg:h-[100vh] xl:h-[110vh] 2xl:h-[100vh]'>
+            <section id="testimonials" className='flex flex-col  h-[70vh] sm:h-[110vh] md:h-[120vh] lg:h-[130vh] xl:h-[120vh] 2xl:h-[100vh]'>
                 <p className='review-title text-center mt-[1rem] mb-4 text-[40px]  font-bold font-montserrat md:text-[50px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] 3xl:text-[90px]'>Testimonials</p>
                 <CardCarousel />
             </section> 
